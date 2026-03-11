@@ -4,7 +4,7 @@ Assistive navigation system designed to help visually impaired commuters identif
 
 The system detects bus locations in real time using **UWB anchors and trilateration**, filters noisy measurements with a **Kalman filter**, and determines whether a requested bus has arrived within a defined bus stop zone.
 
-> Developed as part of the **SUTD Term 5 Engineering Systems Project**.
+> Developed as part of the **SUTD Term 5 30.007 Engineering Design Innovation Project**.
 
 ---
 
@@ -78,16 +78,6 @@ The localisation server renders in real time:
 - Bus stop zone boundaries
 - Raw and filtered bus position estimates
 
-```
-A1        A2
-  \      /
-   \    /
-    Bus
-   /
-  /
-A3
-```
-
 ---
 
 ## Repository Structure
@@ -108,8 +98,7 @@ nondeviate-bus-navigation/
 │   └── ss_twr_responder.ino
 │
 └── figures/
-    ├── localisation_result.png
-    └── radiation_pattern.png
+    └── localisation_result_sample.png
 ```
 
 ---
@@ -155,14 +144,14 @@ Developed as a team project for the SUTD Term 5 Engineering Systems Project.
 
 | Contributor | Contributions |
 |---|---|
-| Nurin Diyanah Binte Awaludin | UWB trilateration model, 2D Kalman filter implementation, anchor placement analysis using radiation patterns |
 | Benjamin Lee Yan Jie | Circuitry Design for handheld device, UWB hardware system testing and deployment |
-| Chong Xing Xiao | ESP32 communication pipeline, system testing and deployment |
-| Kristen Tan Kai Lih | UWB hardware integration, ESP32 communication pipeline, system testing and deployment |
-| Lee Yi Xuan, Samuel | UWB hardware integration, ESP32 communication pipeline, system testing and deployment |
-| Seth Choo Sze Wei | Circuitry design for handheld device, UWB hardware system testing and deployment |
-| Sharmaine Koh Xin Yi | Design and fabrication of handheld device |
-| Tan Pang Wei Matthew | UWB hardware integration, system testing and deployment |
+| Chong Xing Xiao |ESP32 & ESPNOW communication pipeline, system testing and deployment |
+| Kristen Tan Kai Lih |ESP32 & ESPNOW communication pipeline, system testing and deployment |
+| Lee Yi Xuan, Samuel | ESP32 & ESPNOW communication pipeline, system testing and deployment |
+| Nurin Diyanah Binte Awaludin | UWB trilateration model, 2D Kalman filter implementation, UWB hardware system testing and deployment |
+| Seth Choo Sze Wei | Circuitry design for handheld device, UWB hardware system testing and deployment, Anchor placement analysis using radiation patterns |
+| Sharmaine Koh Xin Yi | Design engineering and fabrication of handheld device |
+| Tan Pang Wei Matthew | UWB trilateration model, 2D Kalman filter implementation, UWB hardware system testing and deployment |
 
 ---
 
